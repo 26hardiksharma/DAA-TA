@@ -55,6 +55,7 @@ public class MergeAccounts {
 		for (List<String> acc : result) {
 			System.out.println(acc);
 		}
+
 	}
 }
  

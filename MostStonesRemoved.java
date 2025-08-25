@@ -32,6 +32,7 @@ public class MostStonesRemoved {
 		};
 		int result = removeStones(stones);
 		System.out.println("Maximum stones that can be removed: " + result);
+
 	}
 }
 

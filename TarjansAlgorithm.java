@@ -42,12 +42,23 @@ public class TarjansAlgorithm {
     }
 
     public static void main(String[] args) {
-        int n = 4;
+        int n = 13;
         List<List<Integer>> connections = new ArrayList<>();
-        connections.add(Arrays.asList(0, 1));
         connections.add(Arrays.asList(1, 2));
-        connections.add(Arrays.asList(2, 0));
+        connections.add(Arrays.asList(1, 4));
+        connections.add(Arrays.asList(2,3));
+        connections.add(Arrays.asList(4, 3));
         connections.add(Arrays.asList(1, 3));
+        connections.add(Arrays.asList(4, 5));
+        connections.add(Arrays.asList(1, 3));
+        connections.add(Arrays.asList(5,6));
+        connections.add(Arrays.asList(6,7));
+        connections.add(Arrays.asList(6,9));
+        connections.add(Arrays.asList(7,8));
+        connections.add(Arrays.asList(9,8));
+        connections.add(Arrays.asList(8,10));
+        connections.add(Arrays.asList(10,11));
+        connections.add(Arrays.asList(10,12));
         TarjansAlgorithm ta = new TarjansAlgorithm();
         List<List<Integer>> bridges = ta.criticalConnections(n, connections);
         System.out.println("Critical Connections: " + bridges);

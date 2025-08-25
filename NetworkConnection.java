@@ -2,7 +2,7 @@ import java.util.*;
 
 public class NetworkConnection {
     public int makeConnected(int n, int[][] edges) {
-        if (edges.length < n - 1) return -1; 
+        if (edges.length < n -1) return -1; 
 
         List<List<Integer>> graph = new ArrayList<>();
         for (int i = 0; i < n; i++) graph.add(new ArrayList<>());
@@ -37,5 +37,8 @@ public class NetworkConnection {
             NetworkConnection nc = new NetworkConnection();
             int result = nc.makeConnected(n, edges);
             System.out.println("Minimum number of operations: " + result);
+
         }
+
+        
 }
